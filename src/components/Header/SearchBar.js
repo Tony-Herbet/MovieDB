@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const SearchBar = ({
@@ -6,6 +7,8 @@ const SearchBar = ({
   updateSearchBarValue,
   searchMovie,
   displayLoader,
+  redirect,
+  redirectOn,
 }) => {
   const handleChange = (event) => {
     const inputValue = event.target.value;
@@ -15,15 +18,21 @@ const SearchBar = ({
     event.preventDefault();
     displayLoader();
     searchMovie(value);
+    redirectOn();
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={value}
-        onChange={handleChange}
-      />
-    </form>
+    <>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={value}
+          onChange={handleChange}
+        />
+      </form>
+      {redirect && (
+        <Redirect to="/Movies" />
+      )}
+    </>
   );
 };
 
@@ -32,6 +41,8 @@ SearchBar.propTypes = {
   updateSearchBarValue: PropTypes.func.isRequired,
   searchMovie: PropTypes.func.isRequired,
   displayLoader: PropTypes.func.isRequired,
+  redirect: PropTypes.bool.isRequired,
+  redirectOn: PropTypes.func.isRequired,
 };
 
 export default SearchBar;

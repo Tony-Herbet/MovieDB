@@ -20,7 +20,7 @@ const GenrePage = ({
       {!loading && (
         <>
           {moviesList.map((movie) => (
-            <MoviesThumbnail {...movie} key={movie.title} movie={movie} />
+            <MoviesThumbnail {...movie} key={movie.id} movie={movie} />
           ))}
         </>
       )}
