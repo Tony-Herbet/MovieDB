@@ -37,7 +37,7 @@ Movies.propTypes = {
   title: PropTypes.string.isRequired,
   original_language: PropTypes.string.isRequired,
   release_date: PropTypes.string,
-  poster_path: PropTypes.string.isRequired,
+  poster_path: PropTypes.string,
   vote_average: PropTypes.number.isRequired,
   movie: PropTypes.object.isRequired,
   saveMovieChoice: PropTypes.func.isRequired,
@@ -45,6 +45,7 @@ Movies.propTypes = {
 
 Movies.defaultProps = {
   release_date: '',
+  poster_path: '',
 };
 
 export default Movies;

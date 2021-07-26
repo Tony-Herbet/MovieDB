@@ -15,14 +15,14 @@ const App = () => (
       <Route exact path="/">
         <Genres />
       </Route>
-      <Route exact path="/:slug">
-        <GenrePage />
-      </Route>
-      <Route exact path="/Movies">
+      <Route exact path="/movies">
         <Movies />
       </Route>
       <Route exact path="/Movie/:slug">
         <Movie />
+      </Route>
+      <Route exact path="/:slug">
+        <GenrePage />
       </Route>
     </Switch>
   </div>

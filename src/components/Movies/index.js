@@ -11,9 +11,14 @@ const Movies = ({
     {loading && <Loader />}
     {!loading && (
       <>
-        {searchedList.map((movie) => (
-          <MoviesThumbnail {...movie} key={movie.title} movie={movie} />
-        ))}
+        {searchedList.length === 0 && (
+          <div>No movies matches your search</div>
+        )}
+        {searchedList.length > 0 && (
+          searchedList.map((movie) => (
+            <MoviesThumbnail {...movie} key={movie.id} movie={movie} />
+          ))
+        )}
       </>
     )}
   </div>
