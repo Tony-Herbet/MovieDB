@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Genres from '../../containers/Genres';
-import GenrePage from '../GenrePage';
+import GenrePage from '../../containers/GenrePage';
 
 import './app.scss';
 

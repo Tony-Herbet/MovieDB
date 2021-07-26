@@ -2,7 +2,7 @@ import { SAVE_GENRES, SAVE_GENRE_CHOICE } from '../actions/genres';
 
 const initialState = {
   list: [],
-  choice: 0,
+  choiceId: 0,
 };
 
 const genres = (state = initialState, action = {}) => {
@@ -16,7 +16,7 @@ const genres = (state = initialState, action = {}) => {
     case SAVE_GENRE_CHOICE:
       return {
         ...state,
-        id: action.id,
+        choiceId: action.id,
       };
 
     default: return state;

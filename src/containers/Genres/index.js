@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Genres from '../../components/Genres';
-import { fetchGenres, saveGenreChoice } from '../../actions/genres';
+import { fetchGenres } from '../../actions/genres';
 
 // === mapStateToProps
 const mapStateToProps = (state) => ({
@@ -12,9 +12,6 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   fetchGenres: () => {
     dispatch(fetchGenres());
-  },
-  saveGenreChoice: (id) => {
-    dispatch(saveGenreChoice(id));
   },
 });
 
