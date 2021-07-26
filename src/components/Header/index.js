@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchBar from '../../containers/Header/SearchBar';
 
 const Header = () => (
   <header>
@@ -10,6 +11,7 @@ const Header = () => (
         MovieDB Project
       </Link>
     </nav>
+    <SearchBar />
   </header>
 );
 
