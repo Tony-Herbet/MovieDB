@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Movies from '../../components/GenrePage/Movies';
+import MoviesThumbnail from '../../components/MoviesThumbnail';
 import { saveMovieChoice } from '../../actions/genrePage';
 
 // === mapStateToProps
@@ -14,4 +14,4 @@ const mapDispatchToProps = (dispatch) => ({
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Movies);
+export default connect(mapStateToProps, mapDispatchToProps)(MoviesThumbnail);
