@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Loader from '../Loader';
-import Movies from './Movies';
+import Movies from '../../containers/GenrePage/Movies';
 
 const GenrePage = ({
   loading,
@@ -20,7 +20,7 @@ const GenrePage = ({
       {!loading && (
         <>
           {moviesList.map((movie) => (
-            <Movies {...movie} key={movie.title} />
+            <Movies {...movie} key={movie.title} movie={movie} />
           ))}
         </>
       )}
