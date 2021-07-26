@@ -2,11 +2,14 @@ import {
   DISPLAY_LOADER,
   HIDE_LOADER,
   UPDATE_SEARCHBAR_VALUE,
+  REDIRECT_ON,
+  REDIRECT_OFF,
 } from '../actions/utils';
 
 const initialState = {
   loading: true,
   searchBar: '',
+  redirect: false,
 };
 
 const utils = (state = initialState, action = {}) => {
@@ -30,6 +33,18 @@ const utils = (state = initialState, action = {}) => {
         ...state,
         // update the searchbar input field value
         searchBar: action.value,
+      };
+
+    case REDIRECT_ON:
+      return {
+        ...state,
+        redirect: true,
+      };
+
+    case REDIRECT_OFF:
+      return {
+        ...state,
+        redirect: false,
       };
 
     default: return state;

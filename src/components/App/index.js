@@ -4,6 +4,7 @@ import Header from '../Header';
 import Genres from '../../containers/Genres';
 import GenrePage from '../../containers/GenrePage';
 import Movie from '../../containers/Movie';
+import Movies from '../../containers/Movies';
 
 import './app.scss';
 
@@ -16,6 +17,9 @@ const App = () => (
       </Route>
       <Route exact path="/:slug">
         <GenrePage />
+      </Route>
+      <Route exact path="/Movies">
+        <Movies />
       </Route>
       <Route exact path="/Movie/:slug">
         <Movie />
