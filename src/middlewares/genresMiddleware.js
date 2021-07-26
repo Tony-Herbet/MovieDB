@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 import { FETCH_GENRES, saveGenres } from '../actions/genres';
+import { hideLoader } from '../actions/utils';
 import apiKey from '../utils';
 
 const genresMiddleware = (store) => (next) => (action) => {
@@ -14,6 +15,9 @@ const genresMiddleware = (store) => (next) => (action) => {
         })
         .catch((error) => {
           console.warn(error);
+        })
+        .finally(() => {
+          store.dispatch(hideLoader());
         });
       next(action);
       break;

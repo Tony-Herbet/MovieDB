@@ -1,5 +1,7 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Genres from '../../containers/Genres';
+import GenrePage from '../GenrePage';
 
 import './app.scss';
 
@@ -8,7 +10,14 @@ const App = () => (
     <header className="App-header">
       header
     </header>
-    <Genres />
+    <Switch>
+      <Route exact path="/">
+        <Genres />
+      </Route>
+      <Route exact path="/:slug">
+        <GenrePage />
+      </Route>
+    </Switch>
   </div>
 );
 
