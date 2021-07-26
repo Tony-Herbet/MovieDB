@@ -5,6 +5,7 @@ import { fetchGenres } from '../../actions/genres';
 // === mapStateToProps
 const mapStateToProps = (state) => ({
   list: state.genres.list,
+  loading: state.utils.loading,
 });
 
 // === mapDispatchToProps
