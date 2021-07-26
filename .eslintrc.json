@@ -26,6 +26,9 @@
                     ".jsx"
                 ]
             }
-        ]
+        ],
+        "react/jsx-props-no-spreading": "off",
+        "react/destructuring-assignment": "warn",
+        "react/forbid-prop-types": "off"
     }
 }

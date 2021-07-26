@@ -1,14 +1,14 @@
 import React from 'react';
+import Genres from '../../containers/Genres';
 
-import './App.scss';
+import './app.scss';
 
 const App = () => (
   <div className="App">
     <header className="App-header">
-      <p>
-        Basic install
-      </p>
+      header
     </header>
+    <Genres />
   </div>
 );
 
