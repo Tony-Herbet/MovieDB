@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import Header from '../Header';
 import Genres from '../../containers/Genres';
 import GenrePage from '../../containers/GenrePage';
 import Movie from '../../containers/Movie';
@@ -8,9 +9,7 @@ import './app.scss';
 
 const App = () => (
   <div className="App">
-    <header className="App-header">
-      header
-    </header>
+    <Header />
     <Switch>
       <Route exact path="/">
         <Genres />
