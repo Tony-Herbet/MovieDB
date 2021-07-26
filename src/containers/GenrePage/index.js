@@ -5,7 +5,7 @@ import { displayLoader } from '../../actions/utils';
 
 // === mapStateToProps
 const mapStateToProps = (state) => ({
-  movesList: state.genrePage.movesList,
+  moviesList: state.genrePage.moviesList,
   loading: state.utils.loading,
   choiceId: state.genres.choiceId,
 });

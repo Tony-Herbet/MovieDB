@@ -1,28 +1,30 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { useParams } from 'react-router';
 import Loader from '../Loader';
+import Movies from './Movies';
 
 const GenrePage = ({
   loading,
   fetchGenreMoviesList,
   choiceId,
   displayLoader,
+  moviesList,
 }) => {
   useEffect(() => {
     displayLoader();
     fetchGenreMoviesList(choiceId);
   }, []);
-  const { slug } = useParams();
   return (
-    <>
+    <div>
       {loading && <Loader />}
       {!loading && (
-        <div>
-          {slug}
-        </div>
+        <>
+          {moviesList.map((movie) => (
+            <Movies {...movie} key={movie.title} />
+          ))}
+        </>
       )}
-    </>
+    </div>
   );
 };
 
@@ -31,6 +33,7 @@ GenrePage.propTypes = {
   fetchGenreMoviesList: PropTypes.func.isRequired,
   choiceId: PropTypes.number.isRequired,
   displayLoader: PropTypes.func.isRequired,
+  moviesList: PropTypes.array.isRequired,
 };
 
 export default GenrePage;
