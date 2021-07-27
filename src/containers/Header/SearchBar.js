@@ -5,6 +5,7 @@ import {
   searchMovie,
   displayLoader,
   redirectOn,
+  savePreviousSearch,
 } from '../../actions/utils';
 
 // === mapStateToProps
@@ -26,6 +27,9 @@ const mapDispatchToProps = (dispatch) => ({
   },
   redirectOn: () => {
     dispatch(redirectOn());
+  },
+  savePreviousSearch: (value) => {
+    dispatch(savePreviousSearch(value));
   },
 });
 
