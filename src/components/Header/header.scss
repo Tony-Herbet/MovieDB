@@ -21,6 +21,11 @@
     
     &--title {
       font-size: 1.3rem;
+      padding: 0.3rem;
+
+      &:focus, &:hover {
+        outline: solid 1px $text;
+      }
     }
     &--buttons {
 
@@ -32,8 +37,13 @@
         font-family: $family;
         font-size: 1.5rem;
         padding: 0;
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
+        margin-right: 2px;
+
+        &:focus, &:hover {
+          outline: solid 1px $text;
+        }
       }
     }
 
