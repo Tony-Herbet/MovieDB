@@ -14,9 +14,12 @@ const Genres = ({ fetchGenres, list, loading }) => {
       {loading && <Loader />}
       {!loading && (
         <div className="genres">
-          {list.map((genre) => (
-            <Genre key={genre.id} name={genre.name} id={genre.id} />
-          ))}
+          <h1 className="genres__title">Movie Genres</h1>
+          <div className="genres__list">
+            {list.map((genre) => (
+              <Genre key={genre.id} name={genre.name} id={genre.id} />
+            ))}
+          </div>
         </div>
       )}
     </>
