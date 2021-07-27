@@ -24,11 +24,13 @@ const SearchBar = ({
   };
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form className="header__searchBar" onSubmit={handleSubmit}>
         <input
           type="text"
+          className="header__searchBar--input"
           value={value}
           onChange={handleChange}
+          placeholder="Search for movies"
         />
       </form>
       {redirect && (

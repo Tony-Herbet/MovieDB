@@ -9,7 +9,7 @@ import Movies from '../../containers/Movies';
 import './app.scss';
 
 const App = () => (
-  <div className="App">
+  <div className="app">
     <Header />
     <Switch>
       <Route exact path="/">
