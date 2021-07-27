@@ -1,5 +1,14 @@
 @import 'reset';
+@import 'vars';
 
 body {
   margin: 0;
+  background-color: $dark;
+  color: $text;
+  font-family: $family;
+}
+
+@font-face {
+  font-family: $family;
+  src: url('../assets/Questrial-Regular.ttf');
 }
