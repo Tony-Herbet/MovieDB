@@ -9,6 +9,7 @@ const SearchBar = ({
   displayLoader,
   redirect,
   redirectOn,
+  savePreviousSearch,
 }) => {
   const handleChange = (event) => {
     const inputValue = event.target.value;
@@ -18,6 +19,7 @@ const SearchBar = ({
     event.preventDefault();
     displayLoader();
     searchMovie(value);
+    savePreviousSearch(value);
     redirectOn();
   };
   return (
@@ -43,6 +45,7 @@ SearchBar.propTypes = {
   displayLoader: PropTypes.func.isRequired,
   redirect: PropTypes.bool.isRequired,
   redirectOn: PropTypes.func.isRequired,
+  savePreviousSearch: PropTypes.func.isRequired,
 };
 
 export default SearchBar;

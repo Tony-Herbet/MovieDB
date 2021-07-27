@@ -4,12 +4,15 @@ import {
   UPDATE_SEARCHBAR_VALUE,
   REDIRECT_ON,
   REDIRECT_OFF,
+  CLEAN_SEARCHBAR,
+  SAVE_PREVIOUS_SEARCH,
 } from '../actions/utils';
 
 const initialState = {
   loading: true,
   searchBar: '',
   redirect: false,
+  previousSearch: '',
 };
 
 const utils = (state = initialState, action = {}) => {
@@ -33,6 +36,20 @@ const utils = (state = initialState, action = {}) => {
         ...state,
         // update the searchbar input field value
         searchBar: action.value,
+      };
+
+    case CLEAN_SEARCHBAR:
+      return {
+        ...state,
+        // clear the searchbar input field value
+        searchBar: '',
+      };
+
+    case SAVE_PREVIOUS_SEARCH:
+      return {
+        ...state,
+        // save the previous search input to be display
+        previousSearch: action.value,
       };
 
     case REDIRECT_ON:

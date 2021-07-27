@@ -4,6 +4,7 @@ import Movies from '../../components/Movies';
 // === mapStateToProps
 const mapStateToProps = (state) => ({
   searchedList: state.search.searchedList,
+  previousSearch: state.utils.previousSearch,
   loading: state.utils.loading,
 });
 

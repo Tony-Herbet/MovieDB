@@ -2,6 +2,8 @@
 export const HIDE_LOADER = 'HIDE_LOADER';
 export const DISPLAY_LOADER = 'DISPLAY_LOADER';
 export const UPDATE_SEARCHBAR_VALUE = 'UPDATE_SEARCHBAR_VALUE';
+export const CLEAN_SEARCHBAR = 'CLEAN_SEARCHBAR';
+export const SAVE_PREVIOUS_SEARCH = 'SAVE_PREVIOUS_SEARCH';
 export const SEARCH_MOVIE = 'SEARCH_MOVIE';
 export const SAVE_SEARCHED_MOVIE = 'SAVE_SEARCHED_MOVIE';
 export const REDIRECT_ON = 'REDIRECT_ON';
@@ -18,6 +20,15 @@ export const hideLoader = () => ({
 
 export const updateSearchBarValue = (value) => ({
   type: UPDATE_SEARCHBAR_VALUE,
+  value,
+});
+
+export const cleanSearchBar = () => ({
+  type: CLEAN_SEARCHBAR,
+});
+
+export const savePreviousSearch = (value) => ({
+  type: SAVE_PREVIOUS_SEARCH,
   value,
 });
 

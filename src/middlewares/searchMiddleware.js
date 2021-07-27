@@ -5,6 +5,7 @@ import {
   saveSearchedMovie,
   hideLoader,
   redirectOff,
+  cleanSearchBar,
 } from '../actions/utils';
 import apiKey from '../utils';
 
@@ -22,6 +23,7 @@ const genresMiddleware = (store) => (next) => (action) => {
           console.warn(error);
         })
         .finally(() => {
+          store.dispatch(cleanSearchBar());
           store.dispatch(redirectOff());
           store.dispatch(hideLoader());
         });
