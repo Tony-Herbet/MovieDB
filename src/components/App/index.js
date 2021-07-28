@@ -5,6 +5,7 @@ import Genres from '../../containers/Genres';
 import GenrePage from '../../containers/GenrePage';
 import Movie from '../../containers/Movie';
 import Movies from '../../containers/Movies';
+import Error404 from '../Error404';
 
 import './app.scss';
 
@@ -15,14 +16,17 @@ const App = () => (
       <Route exact path="/">
         <Genres />
       </Route>
-      <Route exact path="/movies">
+      <Route exact path="/Movies">
         <Movies />
       </Route>
       <Route exact path="/Movie/:slug">
         <Movie />
       </Route>
-      <Route exact path="/:slug">
+      <Route exact path="/Genre/:slug">
         <GenrePage />
+      </Route>
+      <Route>
+        <Error404 />
       </Route>
     </Switch>
   </div>

@@ -8,7 +8,7 @@ const Genre = ({ name, id, saveGenreChoice }) => {
   };
   return (
     <Link
-      to={`/${name}`}
+      to={`/Genre/${name}`}
       onClick={handleClick}
       className="genres__list__genre"
     >
