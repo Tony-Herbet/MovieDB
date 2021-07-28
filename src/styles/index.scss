@@ -8,6 +8,14 @@ body {
   font-family: $family;
 }
 
+h1 {
+  margin: 1rem;
+}
+
+.spacing {
+  margin-bottom: 0.5rem;
+}
+
 @font-face {
   font-family: $family;
   src: url('../assets/Questrial-Regular.ttf');

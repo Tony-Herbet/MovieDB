@@ -3,6 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+import './moviesThumbnail.scss';
+
 const Movies = ({
   title,
   original_language,
@@ -19,33 +21,40 @@ const Movies = ({
     <Link
       to={`/Movie/${title}`}
       onClick={handleClick}
+      className="movieThumbnail"
     >
-      <p>{title}</p>
-      <p>{original_language}</p>
-      <p>{release_date}</p>
-      <p>
-        Score:
-        {vote_average}
-        /10
-      </p>
-      <img src={`https://image.tmdb.org/t/p/w200${poster_path}`} alt={`Poster for ${title}`} />
+      <div className="movieThumbnail__datas">
+        <div className="movieThumbnail__datas__title spacing">{title}</div>
+        <img className="movieThumbnail__datas__poster spacing" src={`https://image.tmdb.org/t/p/w200${poster_path}`} alt={`Poster for ${title}`} />
+        <div className="movieThumbnail__datas__language spacing">
+          {`Original language : ${original_language}`}
+        </div>
+        <div className="movieThumbnail__datas__release spacing">
+          {`Release date : ${release_date}`}
+        </div>
+        <div className="movieThumbnail__datas__vote">
+          {`Vote average : ${vote_average}`}
+        </div>
+      </div>
     </Link>
   );
 };
 
 Movies.propTypes = {
   title: PropTypes.string.isRequired,
-  original_language: PropTypes.string.isRequired,
+  original_language: PropTypes.string,
   release_date: PropTypes.string,
   poster_path: PropTypes.string,
-  vote_average: PropTypes.number.isRequired,
+  vote_average: PropTypes.number,
   movie: PropTypes.object.isRequired,
   saveMovieChoice: PropTypes.func.isRequired,
 };
 
 Movies.defaultProps = {
-  release_date: '',
-  poster_path: '',
+  original_language: 'Not found',
+  release_date: 'Not found',
+  poster_path: 'Not found',
+  vote_average: 'Not found',
 };
 
 export default Movies;

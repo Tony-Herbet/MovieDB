@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Loader from '../Loader';
 import MoviesThumbnail from '../../containers/MoviesThumbnail';
 
+import './movies.scss';
+
 const Movies = ({
   loading,
   searchedList,
@@ -11,13 +13,13 @@ const Movies = ({
   <div>
     {loading && <Loader />}
     {!loading && (
-      <>
+      <div className="movies">
+        <h1 className="movies__title">
+          {`Movies matching : "${previousSearch}"`}
+        </h1>
         {searchedList.length === 0 && (
-          <div>
-            No movies matches your search for :
-            &quot;
-            {previousSearch}
-            &quot;
+          <div className="movies__error">
+            No movies matches your search
           </div>
         )}
         {searchedList.length > 0 && (
@@ -25,7 +27,7 @@ const Movies = ({
             <MoviesThumbnail {...movie} key={movie.id} movie={movie} />
           ))
         )}
-      </>
+      </div>
     )}
   </div>
 );

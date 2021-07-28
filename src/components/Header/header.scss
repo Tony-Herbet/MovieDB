@@ -10,7 +10,7 @@
   right: 0;
   padding: 0.5rem;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.8;
   z-index: 1;
 
   &__nav {
@@ -19,12 +19,17 @@
     width: 80%;
     align-items: center;
     
-    &--title {
+    &__title {
       font-size: 1.3rem;
-    }
-    &--buttons {
+      padding: 0.3rem;
 
-      &--button {
+      &:focus, &:hover {
+        outline: solid 1px $text;
+      }
+    }
+    &__buttons {
+
+      &__button {
         border: none;
         color: $text;
         outline: none;
@@ -32,8 +37,13 @@
         font-family: $family;
         font-size: 1.5rem;
         padding: 0;
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
+        margin-right: 2px;
+
+        &:focus, &:hover {
+          outline: solid 1px $text;
+        }
       }
     }
 
@@ -43,7 +53,7 @@
     position: absolute;
     right: 10px;
 
-    &--input {
+    &__input {
       width: 0;
       padding: 0.3rem;
       padding-right: $magnifying * 1.3;
