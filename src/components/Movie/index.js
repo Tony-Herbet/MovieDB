@@ -15,18 +15,22 @@ const Movie = ({
     <h1 className="movie__title">
       {title}
     </h1>
-    <img className="movie__language spacing" src={`https://image.tmdb.org/t/p/w200${poster}`} alt={`Poster for ${title}`} />
-    <div className="movie__language spacing">
-      {`Original language : ${language}`}
-    </div>
-    <div className="movie__release spacing">
-      {`Release date : ${release}`}
-    </div>
-    <div className="movie__vote spacing">
-      {`Vote average : ${vote}`}
+    <div className="movie__datas">
+      <img className="movie__datas__img spacing" src={`https://image.tmdb.org/t/p/w200${poster}`} alt={`Poster for ${title}`} />
+      <div className="movie__datas__details">
+        <div className="movie__datas__details__language spacing">
+          {`Original language: ${language}`}
+        </div>
+        <div className="movie__datas__details__release spacing">
+          {`Release date: ${release}`}
+        </div>
+        <div className="movie__datas__details__vote spacing">
+          {`Vote average: ${vote}`}
+        </div>
+      </div>
     </div>
     <div className="movie__overview spacing">
-      {`Overview : ${overview}`}
+      {`Overview: ${overview}`}
     </div>
   </div>
 );

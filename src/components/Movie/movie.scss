@@ -4,7 +4,59 @@
   align-items: center;
   padding: 0 0.5rem;
 
+  &__datas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.9em;
+
+    &__details {
+      &__img {
+        min-width: 200px;
+        min-height: 300px;
+        max-width: 200px;
+        max-height: 300px;
+      }
+    }
+  }
+  
   &__overview {
-    width: 50%;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .movie {
+    &__datas {
+      flex-direction: row;
+
+      &__details {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .movie {
+    &__overview {
+      width: 60vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .movie {
+    &__overview {
+      width: 50vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .movie {
+    &__overview {
+      width: 40vw;
+    }
   }
 }
