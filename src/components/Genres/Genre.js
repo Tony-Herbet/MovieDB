@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+// Sub-component use to display each genre
 const Genre = ({ name, id, saveGenreChoice }) => {
   const handleClick = () => {
     saveGenreChoice(id);

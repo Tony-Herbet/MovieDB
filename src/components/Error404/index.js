@@ -3,6 +3,7 @@ import React from 'react';
 import ConfusedTravolta from '../../assets/confusedtravolta.jpg';
 import './error404.scss';
 
+// Component use when url is not valid
 const Error404 = () => (
   <div className="error404">
     <h1 className="error404__title">

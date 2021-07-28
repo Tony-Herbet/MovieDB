@@ -5,6 +5,7 @@ import MoviesThumbnail from '../../containers/MoviesThumbnail';
 
 import './movies.scss';
 
+// Component use to list all the movies from a search
 const Movies = ({
   loading,
   searchedList,

@@ -1,6 +1,7 @@
 import { SAVE_SEARCHED_MOVIE } from '../actions/utils';
 
 const initialState = {
+  // list of all the movies matching the user search
   searchedList: [],
 };
 

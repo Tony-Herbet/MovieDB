@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import './moviesThumbnail.scss';
 
+// Component use to display each movie
 const Movies = ({
   title,
   original_language,

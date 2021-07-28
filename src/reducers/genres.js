@@ -1,7 +1,9 @@
 import { SAVE_GENRES, SAVE_GENRE_CHOICE } from '../actions/genres';
 
 const initialState = {
+  // List of the genres
   list: [],
+  // id of the genre choose by the user
   choiceId: 0,
 };
 

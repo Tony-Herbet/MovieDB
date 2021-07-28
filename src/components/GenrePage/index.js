@@ -6,6 +6,7 @@ import MoviesThumbnail from '../../containers/MoviesThumbnail';
 
 import './genrePage.scss';
 
+// Component use to display the movies list from a specific genre
 const GenrePage = ({
   loading,
   fetchGenreMoviesList,
