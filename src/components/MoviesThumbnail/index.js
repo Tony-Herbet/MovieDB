@@ -3,6 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+import './moviesThumbnail.scss';
+
 const Movies = ({
   title,
   original_language,
@@ -19,16 +21,21 @@ const Movies = ({
     <Link
       to={`/Movie/${title}`}
       onClick={handleClick}
+      className="movieThumbnail"
     >
-      <p>{title}</p>
-      <p>{original_language}</p>
-      <p>{release_date}</p>
-      <p>
-        Score:
-        {vote_average}
-        /10
-      </p>
-      <img src={`https://image.tmdb.org/t/p/w200${poster_path}`} alt={`Poster for ${title}`} />
+      <div className="movieThumbnail__datas">
+        <div className="movieThumbnail__datas__title">{title}</div>
+        <img className="movieThumbnail__datas__poster" src={`https://image.tmdb.org/t/p/w200${poster_path}`} alt={`Poster for ${title}`} />
+        <div className="movieThumbnail__datas__language">
+          {`Original language : ${original_language}`}
+        </div>
+        <div className="movieThumbnail__datas__release">
+          {`Release date : ${release_date}`}
+        </div>
+        <div className="movieThumbnail__datas__vote">
+          {`Vote average : ${vote_average}`}
+        </div>
+      </div>
     </Link>
   );
 };

@@ -10,7 +10,7 @@ const Genre = ({ name, id, saveGenreChoice }) => {
     <Link
       to={`/${name}`}
       onClick={handleClick}
-      className="genres__list--genre"
+      className="genres__list__genre"
     >
       {name}
     </Link>

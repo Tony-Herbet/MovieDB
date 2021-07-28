@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Loader from '../Loader';
 import MoviesThumbnail from '../../containers/MoviesThumbnail';
+
+import './genrePage.scss';
 
 const GenrePage = ({
   loading,
@@ -14,17 +17,21 @@ const GenrePage = ({
     displayLoader();
     fetchGenreMoviesList(choiceId);
   }, []);
+  const { slug } = useParams();
   return (
-    <div>
+    <>
       {loading && <Loader />}
       {!loading && (
-        <>
+        <div className="genrePage">
+          <h1 className="genrePage__title">
+            {`${slug} movies`}
+          </h1>
           {moviesList.map((movie) => (
             <MoviesThumbnail {...movie} key={movie.id} movie={movie} />
           ))}
-        </>
+        </div>
       )}
-    </div>
+    </>
   );
 };
 

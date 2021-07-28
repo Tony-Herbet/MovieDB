@@ -27,7 +27,7 @@ const SearchBar = ({
       <form className="header__searchBar" onSubmit={handleSubmit}>
         <input
           type="text"
-          className="header__searchBar--input"
+          className="header__searchBar__input"
           value={value}
           onChange={handleChange}
           placeholder="Search for movies"

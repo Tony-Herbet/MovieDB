@@ -17,15 +17,15 @@ const Header = () => {
       <nav className="header__nav">
         <Link
           to="/"
-          className="header__nav--title"
+          className="header__nav__title"
         >
           MovieDB Project
         </Link>
-        <div className="header__nav--buttons">
-          <button type="button" className="header__nav--buttons--button" onClick={handleGoBack}>
+        <div className="header__nav__buttons">
+          <button type="button" className="header__nav__buttons__button" onClick={handleGoBack}>
             &larr;
           </button>
-          <button type="button" className="header__nav--buttons--button" onClick={handleGoForward}>
+          <button type="button" className="header__nav__buttons__button" onClick={handleGoForward}>
             &rarr;
           </button>
         </div>
