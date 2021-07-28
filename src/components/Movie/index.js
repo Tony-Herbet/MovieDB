@@ -33,11 +33,19 @@ const Movie = ({
 
 Movie.propTypes = {
   title: PropTypes.string.isRequired,
-  vote: PropTypes.number.isRequired,
-  poster: PropTypes.string.isRequired,
-  overview: PropTypes.string.isRequired,
-  release: PropTypes.string.isRequired,
-  language: PropTypes.string.isRequired,
+  vote: PropTypes.number,
+  poster: PropTypes.string,
+  overview: PropTypes.string,
+  release: PropTypes.string,
+  language: PropTypes.string,
+};
+
+Movie.defaultProps = {
+  language: 'Not found',
+  release: 'Not found',
+  poster: 'Not found',
+  overview: 'Not found',
+  vote: 'Not found',
 };
 
 export default Movie;

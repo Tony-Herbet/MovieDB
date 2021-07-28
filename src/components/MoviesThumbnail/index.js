@@ -42,17 +42,19 @@ const Movies = ({
 
 Movies.propTypes = {
   title: PropTypes.string.isRequired,
-  original_language: PropTypes.string.isRequired,
+  original_language: PropTypes.string,
   release_date: PropTypes.string,
   poster_path: PropTypes.string,
-  vote_average: PropTypes.number.isRequired,
+  vote_average: PropTypes.number,
   movie: PropTypes.object.isRequired,
   saveMovieChoice: PropTypes.func.isRequired,
 };
 
 Movies.defaultProps = {
-  release_date: '',
-  poster_path: '',
+  original_language: 'Not found',
+  release_date: 'Not found',
+  poster_path: 'Not found',
+  vote_average: 'Not found',
 };
 
 export default Movies;
