@@ -26,9 +26,11 @@ const GenrePage = ({
           <h1 className="genrePage__title">
             {`${slug} movies`}
           </h1>
-          {moviesList.map((movie) => (
-            <MoviesThumbnail {...movie} key={movie.id} movie={movie} />
-          ))}
+          <div className="genrePage__list">
+            {moviesList.map((movie) => (
+              <MoviesThumbnail {...movie} key={movie.id} movie={movie} />
+            ))}
+          </div>
         </div>
       )}
     </>

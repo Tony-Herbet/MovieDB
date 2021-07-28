@@ -22,11 +22,13 @@ const Movies = ({
             No movies matches your search
           </div>
         )}
-        {searchedList.length > 0 && (
-          searchedList.map((movie) => (
-            <MoviesThumbnail {...movie} key={movie.id} movie={movie} />
-          ))
-        )}
+        <div className="movies__list">
+          {searchedList.length > 0 && (
+            searchedList.map((movie) => (
+              <MoviesThumbnail {...movie} key={movie.id} movie={movie} />
+            ))
+          )}
+        </div>
       </div>
     )}
   </div>

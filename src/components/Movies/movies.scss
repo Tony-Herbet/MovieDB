@@ -7,4 +7,11 @@
   &__error {
     margin: 1rem;
   }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

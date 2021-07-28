@@ -15,7 +15,6 @@
 
   &__nav {
     display: flex;
-    justify-content: space-between;
     width: 80%;
     align-items: center;
     
@@ -28,6 +27,9 @@
       }
     }
     &__buttons {
+      width: 5rem;
+      display: flex;
+      justify-content: space-around;
 
       &__button {
         border: none;
@@ -72,13 +74,37 @@
 
       &:focus, &:hover {
         transition: all .2s ease-in-out;
-        width: $magnifying * 9;
+        width: 8.5rem;
         border-color: $text;
 
         &::placeholder {
           color: $whiteAlpha;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .header__nav__buttons {
+    margin-left: 2rem;
+  }
+
+  .header__searchBar__input {
+    &:focus, &:hover {
+      width: 12rem;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header__nav__buttons {
+    margin-left: 4rem;
+  }
+
+  .header__searchBar__input {
+    &:focus, &:hover {
+      width: 18rem;
     }
   }
 }
