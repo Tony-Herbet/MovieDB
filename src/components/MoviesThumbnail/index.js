@@ -24,12 +24,12 @@ const Movies = ({
       className="movieThumbnail"
     >
       <div className="movieThumbnail__datas">
-        <div className="movieThumbnail__datas__title">{title}</div>
-        <img className="movieThumbnail__datas__poster" src={`https://image.tmdb.org/t/p/w200${poster_path}`} alt={`Poster for ${title}`} />
-        <div className="movieThumbnail__datas__language">
+        <div className="movieThumbnail__datas__title spacing">{title}</div>
+        <img className="movieThumbnail__datas__poster spacing" src={`https://image.tmdb.org/t/p/w200${poster_path}`} alt={`Poster for ${title}`} />
+        <div className="movieThumbnail__datas__language spacing">
           {`Original language : ${original_language}`}
         </div>
-        <div className="movieThumbnail__datas__release">
+        <div className="movieThumbnail__datas__release spacing">
           {`Release date : ${release_date}`}
         </div>
         <div className="movieThumbnail__datas__vote">

@@ -18,21 +18,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    &__title {
-      margin-bottom: 0.5rem;
-    }
-
-    &__poster {
-      margin-bottom: 0.5rem;
-    }
-
-    &__language {
-      margin-bottom: 0.5rem;
-    }
-
-    &__release {
-      margin-bottom: 0.5rem;
-    }
   }
 }
