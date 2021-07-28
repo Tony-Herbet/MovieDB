@@ -28,13 +28,13 @@ const Movies = ({
         <img className="movieThumbnail__datas__poster spacing" src={`https://image.tmdb.org/t/p/w200${poster_path}`} alt={`Poster for ${title}`} />
         <div className="movieThumbnail__datas__details spacing">
           <div className="movieThumbnail__datas__details__language spacing">
-            {`Original language : ${original_language}`}
+            {`Original language: ${original_language}`}
           </div>
           <div className="movieThumbnail__datas__details__release spacing">
-            {`Release date : ${release_date}`}
+            {`Release date: ${release_date}`}
           </div>
           <div className="movieThumbnail__datas__details__vote">
-            {`Vote average : ${vote_average}`}
+            {`Vote average: ${vote_average}`}
           </div>
         </div>
       </div>

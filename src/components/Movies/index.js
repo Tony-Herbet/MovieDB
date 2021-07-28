@@ -15,7 +15,7 @@ const Movies = ({
     {!loading && (
       <div className="movies">
         <h1 className="movies__title">
-          {`Movies matching : "${previousSearch}"`}
+          {`Movies matching: "${previousSearch}"`}
         </h1>
         {searchedList.length === 0 && (
           <div className="movies__error">
