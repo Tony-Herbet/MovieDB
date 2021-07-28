@@ -4,7 +4,10 @@ import SearchBar from '../../containers/Header/SearchBar';
 
 import './header.scss';
 
+// Component use for the header
 const Header = () => {
+  // history & handlers are use to make buttons to navigate back/forward
+  // with the keyboard to "simulate" a remote controller
   const history = useHistory();
   const handleGoBack = () => {
     history.goBack();

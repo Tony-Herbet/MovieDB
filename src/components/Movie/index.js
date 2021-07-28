@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import './movie.scss';
 
+// Component that serve as a Movie page
 const Movie = ({
   title,
   vote,

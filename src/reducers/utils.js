@@ -9,9 +9,13 @@ import {
 } from '../actions/utils';
 
 const initialState = {
+  // bool use to display the Loader component
   loading: true,
+  // input value of the search bar
   searchBar: '',
+  // bool use to redirect the user
   redirect: false,
+  // save the previous search made by the user
   previousSearch: '',
 };
 

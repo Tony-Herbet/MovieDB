@@ -5,8 +5,10 @@ import Loader from '../Loader';
 
 import './genres.scss';
 
+// Component that serve as a homepage and list all the movies genres
 const Genres = ({ fetchGenres, list, loading }) => {
   useEffect(() => {
+  // API request for all the movies genres
     fetchGenres();
   }, []);
   return (

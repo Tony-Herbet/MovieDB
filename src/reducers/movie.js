@@ -1,6 +1,7 @@
 import { SAVE_MOVIE_CHOICE } from '../actions/genrePage';
 
 const initialState = {
+
 };
 
 const Movie = (state = initialState, action = {}) => {
