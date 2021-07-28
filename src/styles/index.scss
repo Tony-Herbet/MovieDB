@@ -1,5 +1,46 @@
 @import 'reset';
+@import 'vars';
 
 body {
   margin: 0;
+  background-color: $dark;
+  color: $text;
+  font-family: $family;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+.spacing {
+  margin-bottom: 0.5rem;
+}
+
+@font-face {
+  font-family: $family;
+  src: url('../assets/Questrial-Regular.ttf');
+}
+
+@media screen and (min-width: 481px) {
+  body {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+    font-size: 27px;
+  }
 }
