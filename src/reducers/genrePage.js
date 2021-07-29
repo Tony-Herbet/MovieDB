@@ -1,4 +1,4 @@
-import { SAVE_GENRE_MOVIES_LIST } from '../actions/genrePage';
+import { SAVE_GENRE_MOVIES_LIST } from 'src/actions/genrePage';
 
 const initialState = {
   // list of the movies from the genre choose by the user

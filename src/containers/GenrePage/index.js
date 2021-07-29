@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import GenrePage from '../../components/GenrePage';
-import { fetchGenreMoviesList } from '../../actions/genrePage';
-import { displayLoader } from '../../actions/utils';
+import GenrePage from 'src/components/GenrePage';
+import { fetchGenreMoviesList } from 'src/actions/genrePage';
+import { displayLoader } from 'src/actions/utils';
 
 // === mapStateToProps
 const mapStateToProps = (state) => ({

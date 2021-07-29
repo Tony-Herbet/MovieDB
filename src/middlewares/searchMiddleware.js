@@ -6,8 +6,8 @@ import {
   hideLoader,
   redirectOff,
   cleanSearchBar,
-} from '../actions/utils';
-import apiKey from '../utils';
+} from 'src/actions/utils';
+import apiKey from 'src/utils';
 
 const genresMiddleware = (store) => (next) => (action) => {
   switch (action.type) {

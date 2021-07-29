@@ -1,4 +1,4 @@
-import { SAVE_MOVIE_CHOICE } from '../actions/genrePage';
+import { SAVE_MOVIE_CHOICE } from 'src/actions/genrePage';
 
 const initialState = {
 

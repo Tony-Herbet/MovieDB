@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import Genre from '../../components/Genres/Genre';
-import { saveGenreChoice } from '../../actions/genres';
+import Genre from 'src/components/Genres/Genre';
+import { saveGenreChoice } from 'src/actions/genres';
 
 // === mapStateToProps
 const mapStateToProps = () => ({

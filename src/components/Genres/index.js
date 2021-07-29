@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Genre from '../../containers/Genres/Genre';
-import Loader from '../Loader';
+import Genre from 'src/containers/Genres/Genre';
+import Loader from 'src/components/Loader';
 
 import './genres.scss';
 

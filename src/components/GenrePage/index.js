@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import Loader from '../Loader';
-import MoviesThumbnail from '../../containers/MoviesThumbnail';
+import Loader from 'src/components/Loader';
+import MoviesThumbnail from 'src/containers/MoviesThumbnail';
 
 import './genrePage.scss';
 

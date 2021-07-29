@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Header from '../Header';
-import Genres from '../../containers/Genres';
-import GenrePage from '../../containers/GenrePage';
-import Movie from '../../containers/Movie';
-import Movies from '../../containers/Movies';
-import Error404 from '../Error404';
+import Header from 'src/components/Header/index';
+import Movie from 'src/containers/Movie';
+import Movies from 'src/containers/Movies';
+import Error404 from 'src/components/Error404';
+import Genres from 'src/containers/Genres';
+import GenrePage from 'src/containers/GenrePage';
 
 import './app.scss';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import FilmReel from '../../assets/filmReel.svg';
+import FilmReel from 'src/assets/filmReel.svg';
 import './loader.scss';
 
 // Component is display when we make an API request to wait for the response

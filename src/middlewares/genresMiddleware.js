@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-import { FETCH_GENRES, saveGenres } from '../actions/genres';
-import { hideLoader } from '../actions/utils';
-import apiKey from '../utils';
+import { FETCH_GENRES, saveGenres } from 'src/actions/genres';
+import { hideLoader } from 'src/actions/utils';
+import apiKey from 'src/utils';
 
 const genresMiddleware = (store) => (next) => (action) => {
   switch (action.type) {

@@ -1,12 +1,12 @@
 import { connect } from 'react-redux';
-import SearchBar from '../../components/Header/SearchBar';
+import SearchBar from 'src/components/Header/SearchBar';
 import {
   updateSearchBarValue,
   searchMovie,
   displayLoader,
   redirectOn,
   savePreviousSearch,
-} from '../../actions/utils';
+} from 'src/actions/utils';
 
 // === mapStateToProps
 const mapStateToProps = (state) => ({

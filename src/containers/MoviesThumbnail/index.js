@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import MoviesThumbnail from '../../components/MoviesThumbnail';
-import { saveMovieChoice } from '../../actions/genrePage';
+import MoviesThumbnail from 'src/components/MoviesThumbnail';
+import { saveMovieChoice } from 'src/actions/genrePage';
 
 // === mapStateToProps
 const mapStateToProps = () => ({

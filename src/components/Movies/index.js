@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Loader from '../Loader';
-import MoviesThumbnail from '../../containers/MoviesThumbnail';
+import Loader from 'src/components/Loader';
+import MoviesThumbnail from 'src/containers/MoviesThumbnail';
 
 import './movies.scss';
 

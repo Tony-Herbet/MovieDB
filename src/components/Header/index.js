@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import SearchBar from '../../containers/Header/SearchBar';
+import SearchBar from 'src/containers/Header/SearchBar';
 
 import './header.scss';
 

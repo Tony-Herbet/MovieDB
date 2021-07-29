@@ -6,7 +6,7 @@ import {
   REDIRECT_OFF,
   CLEAN_SEARCHBAR,
   SAVE_PREVIOUS_SEARCH,
-} from '../actions/utils';
+} from 'src/actions/utils';
 
 const initialState = {
   // bool use to display the Loader component

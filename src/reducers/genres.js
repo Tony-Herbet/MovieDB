@@ -1,4 +1,4 @@
-import { SAVE_GENRES, SAVE_GENRE_CHOICE } from '../actions/genres';
+import { SAVE_GENRES, SAVE_GENRE_CHOICE } from 'src/actions/genres';
 
 const initialState = {
   // List of the genres

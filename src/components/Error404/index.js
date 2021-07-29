@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ConfusedTravolta from '../../assets/confusedtravolta.jpg';
+import ConfusedTravolta from 'src/assets/confusedtravolta.jpg';
 import './error404.scss';
 
 // Component use when url is not valid
