@@ -13,8 +13,8 @@ const genresMiddleware = (store) => (next) => (action) => {
           // dispatch to save the genres list
           store.dispatch(saveGenres(response.data.genres));
         })
-        .catch((error) => {
-          console.warn(error);
+        .catch(() => {
+
         })
         .finally(() => {
           store.dispatch(hideLoader());

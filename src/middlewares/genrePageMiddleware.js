@@ -15,8 +15,8 @@ const genresMiddleware = (store) => (next) => (action) => {
           // dispatch to save the genre movies list
           store.dispatch(saveGenreMoviesList(response.data.results));
         })
-        .catch((error) => {
-          console.warn(error);
+        .catch(() => {
+
         })
         .finally(() => {
           store.dispatch(hideLoader());

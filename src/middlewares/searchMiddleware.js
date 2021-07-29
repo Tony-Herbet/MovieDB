@@ -19,8 +19,8 @@ const genresMiddleware = (store) => (next) => (action) => {
           // dispatch to save the searched list
           store.dispatch(saveSearchedMovie(response.data.results));
         })
-        .catch((error) => {
-          console.warn(error);
+        .catch(() => {
+
         })
         .finally(() => {
           store.dispatch(cleanSearchBar());
